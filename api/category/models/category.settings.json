@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "category"
+    "name": "category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,13 @@
       "type": "string"
     },
     "articles": {
-      "collection": "article",
       "via": "categories",
+      "collection": "article",
       "dominant": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

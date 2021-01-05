@@ -62,6 +62,9 @@
     "articles": {
       "via": "author",
       "collection": "article"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }
